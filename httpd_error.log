@@ -1,0 +1,25 @@
+[Mon Apr 02 18:11:50.559199 2018] [core:notice] [pid 1870] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Mon Apr 02 18:11:50.564794 2018] [suexec:notice] [pid 1870] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+[Mon Apr 02 18:11:50.585889 2018] [auth_digest:notice] [pid 1870] AH01757: generating secret for digest authentication ...
+[Mon Apr 02 18:11:50.586840 2018] [lbmethod_heartbeat:notice] [pid 1870] AH02282: No slotmem from mod_heartmonitor
+[Mon Apr 02 18:11:50.601740 2018] [mpm_prefork:notice] [pid 1870] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips configured -- resuming normal operations
+[Mon Apr 02 18:11:50.601773 2018] [core:notice] [pid 1870] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Apr 02 18:12:14.839595 2018] [mpm_prefork:notice] [pid 1870] AH00170: caught SIGWINCH, shutting down gracefully
+[Mon Apr 02 18:12:15.887237 2018] [core:notice] [pid 1909] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Mon Apr 02 18:12:15.887941 2018] [suexec:notice] [pid 1909] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+[Mon Apr 02 18:12:15.906252 2018] [auth_digest:notice] [pid 1909] AH01757: generating secret for digest authentication ...
+[Mon Apr 02 18:12:15.906911 2018] [lbmethod_heartbeat:notice] [pid 1909] AH02282: No slotmem from mod_heartmonitor
+[Mon Apr 02 18:12:15.909162 2018] [mpm_prefork:notice] [pid 1909] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips configured -- resuming normal operations
+[Mon Apr 02 18:12:15.909195 2018] [core:notice] [pid 1909] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'
+[Mon Apr 02 18:18:58.668355 2018] [autoindex:error] [pid 1914] [client 192.168.11.2:57922] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Mon Apr 02 18:19:09.366311 2018] [autoindex:error] [pid 2270] [client 192.168.11.2:57930] AH01276: Cannot serve directory /var/www/html/: No matching DirectoryIndex (index.html) found, and server-generated directory index forbidden by Options directive
+[Mon Apr 02 20:04:31.226464 2018] [mpm_prefork:notice] [pid 1909] AH00170: caught SIGWINCH, shutting down gracefully
+[Tue Apr 03 11:10:50.733303 2018] [core:notice] [pid 1383] SELinux policy enabled; httpd running as context system_u:system_r:httpd_t:s0
+[Tue Apr 03 11:10:50.739335 2018] [suexec:notice] [pid 1383] AH01232: suEXEC mechanism enabled (wrapper: /usr/sbin/suexec)
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+[Tue Apr 03 11:10:50.758537 2018] [auth_digest:notice] [pid 1383] AH01757: generating secret for digest authentication ...
+[Tue Apr 03 11:10:50.759750 2018] [lbmethod_heartbeat:notice] [pid 1383] AH02282: No slotmem from mod_heartmonitor
+[Tue Apr 03 11:10:50.766859 2018] [mpm_prefork:notice] [pid 1383] AH00163: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips configured -- resuming normal operations
+[Tue Apr 03 11:10:50.766902 2018] [core:notice] [pid 1383] AH00094: Command line: '/usr/sbin/httpd -D FOREGROUND'

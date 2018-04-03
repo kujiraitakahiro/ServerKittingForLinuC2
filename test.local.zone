@@ -1,0 +1,13 @@
+$TTL 3H
+@	IN SOA	ns.test.local. root.test.local. (
+				2018041501	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	NS	ns.test.local.
+	MX 10	mail.test.local.
+ns	A	192.168.11.4
+www	A	192.168.11.4
+ftp	A	192.168.11.4
+mail	A	192.168.11.4
