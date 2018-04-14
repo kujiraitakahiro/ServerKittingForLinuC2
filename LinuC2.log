@@ -1,0 +1,2078 @@
+[root@localhost ~]# yum install httpd
+読み込んだプラグイン:fastestmirror
+base                                                     | 3.6 kB     00:00
+extras                                                   | 3.4 kB     00:00
+updates                                                  | 3.4 kB     00:00
+(1/4): base/7/x86_64/group_gz                              | 156 kB   00:00
+(2/4): extras/7/x86_64/primary_db                          | 185 kB   00:00
+(3/4): base/7/x86_64/primary_db                            | 5.7 MB   00:04
+(4/4): updates/7/x86_64/primary_db                         | 6.9 MB   00:05
+Determining fastest mirrors
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ httpd.x86_64 0:2.4.6-67.el7.centos.6 を インストール
+--> 依存性の処理をしています: httpd-tools = 2.4.6-67.el7.centos.6 のパッケージ: httpd-2.4.6-67.el7.centos.6.x86_64
+--> 依存性の処理をしています: /etc/mime.types のパッケージ: httpd-2.4.6-67.el7.centos.6.x86_64
+--> 依存性の処理をしています: libaprutil-1.so.0()(64bit) のパッケージ: httpd-2.4.6-67.el7.centos.6.x86_64
+--> 依存性の処理をしています: libapr-1.so.0()(64bit) のパッケージ: httpd-2.4.6-67.el7.centos.6.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ apr.x86_64 0:1.4.8-3.el7_4.1 を インストール
+---> パッケージ apr-util.x86_64 0:1.5.2-6.el7 を インストール
+---> パッケージ httpd-tools.x86_64 0:2.4.6-67.el7.centos.6 を インストール
+---> パッケージ mailcap.noarch 0:2.1.41-2.el7 を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+================================================================================
+ Package           アーキテクチャー
+                                バージョン                  リポジトリー   容量
+================================================================================
+インストール中:
+ httpd             x86_64       2.4.6-67.el7.centos.6       updates       2.7 M
+依存性関連でのインストールをします:
+ apr               x86_64       1.4.8-3.el7_4.1             updates       103 k
+ apr-util          x86_64       1.5.2-6.el7                 base           92 k
+ httpd-tools       x86_64       2.4.6-67.el7.centos.6       updates        88 k
+ mailcap           noarch       2.1.41-2.el7                base           31 k
+
+トランザクションの要約
+================================================================================
+インストール  1 パッケージ (+4 個の依存関係のパッケージ)
+
+総ダウンロード容量: 3.0 M
+インストール容量: 10 M
+Is this ok [y/d/N]: y
+Downloading packages:
+警告: /var/cache/yum/x86_64/7/updates/packages/httpd-tools-2.4.6-67.el7.centos.6.x86_64.rpm: ヘッダー V3 RSA/SHA256 Signature、鍵 ID f4a80eb5: NOKEY
+httpd-tools-2.4.6-67.el7.centos.6.x86_64.rpm の公開鍵がインストールされていません
+(1/5): httpd-tools-2.4.6-67.el7.centos.6.x86_64.rpm        |  88 kB   00:00
+(2/5): apr-1.4.8-3.el7_4.1.x86_64.rpm                      | 103 kB   00:00
+apr-util-1.5.2-6.el7.x86_64.rpm の公開鍵がインストールされていません
+(3/5): apr-util-1.5.2-6.el7.x86_64.rpm                     |  92 kB   00:00
+(4/5): mailcap-2.1.41-2.el7.noarch.rpm                     |  31 kB   00:00
+(5/5): httpd-2.4.6-67.el7.centos.6.x86_64.rpm              | 2.7 MB   00:02
+--------------------------------------------------------------------------------
+合計                                               1.0 MB/s | 3.0 MB  00:02
+file:///etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7 から鍵を取得中です。
+Importing GPG key 0xF4A80EB5:
+ Userid     : "CentOS-7 Key (CentOS 7 Official Signing Key) <security@centos.org>"
+ Fingerprint: 6341 ab27 53d7 8a78 a7c2 7bb1 24c6 a8a7 f4a8 0eb5
+ Package    : centos-release-7-4.1708.el7.centos.x86_64 (@anaconda)
+ From       : /etc/pki/rpm-gpg/RPM-GPG-KEY-CentOS-7
+上記の処理を行います。よろしいでしょうか？ [y/N]y
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : apr-1.4.8-3.el7_4.1.x86_64                      1/5
+  インストール中          : apr-util-1.5.2-6.el7.x86_64                     2/5
+  インストール中          : httpd-tools-2.4.6-67.el7.centos.6.x86_64        3/5
+  インストール中          : mailcap-2.1.41-2.el7.noarch                     4/5
+  インストール中          : httpd-2.4.6-67.el7.centos.6.x86_64              5/5
+  検証中                  : mailcap-2.1.41-2.el7.noarch                     1/5
+  検証中                  : httpd-2.4.6-67.el7.centos.6.x86_64              2/5
+  検証中                  : apr-util-1.5.2-6.el7.x86_64                     3/5
+  検証中                  : apr-1.4.8-3.el7_4.1.x86_64                      4/5
+  検証中                  : httpd-tools-2.4.6-67.el7.centos.6.x86_64        5/5
+
+インストール:
+  httpd.x86_64 0:2.4.6-67.el7.centos.6
+
+依存性関連をインストールしました:
+  apr.x86_64 0:1.4.8-3.el7_4.1                  apr-util.x86_64 0:1.5.2-6.el7
+  httpd-tools.x86_64 0:2.4.6-67.el7.centos.6    mailcap.noarch 0:2.1.41-2.el7
+
+完了しました!
+[root@localhost ~]# apachectl configtest
+AH00558: httpd: Could not reliably determine the server's fully qualified domain name, using localhost.localdomain. Set the 'ServerName' directive globally to suppress this message
+Syntax OK
+[root@localhost ~]# systemctl start httpd
+[root@localhost ~]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since 土 2018-04-14 22:57:11 JST; 5s ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+ Main PID: 1747 (httpd)
+   Status: "Processing requests..."
+   CGroup: /system.slice/httpd.service
+           ├─1747 /usr/sbin/httpd -DFOREGROUND
+           ├─1748 /usr/sbin/httpd -DFOREGROUND
+           ├─1749 /usr/sbin/httpd -DFOREGROUND
+           ├─1750 /usr/sbin/httpd -DFOREGROUND
+           ├─1751 /usr/sbin/httpd -DFOREGROUND
+           └─1752 /usr/sbin/httpd -DFOREGROUND
+
+ 4月 14 22:57:11 localhost.localdomain systemd[1]: Starting The Apache HTTP ...
+ 4月 14 22:57:11 localhost.localdomain httpd[1747]: AH00558: httpd: Could no...
+ 4月 14 22:57:11 localhost.localdomain systemd[1]: Started The Apache HTTP S...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost ~]# ss -ltp
+State      Recv-Q Send-Q Local Address:Port                 Peer Address:Port
+LISTEN     0      128        *:ssh                      *:*                     users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:smtp                     *:*                     users:(("master",pid=1244,fd=13))
+LISTEN     0      128       :::http                    :::*                     users:(("httpd",pid=1752,fd=4),("httpd",pid=1751,fd=4),("httpd",pid=1750,fd=4),("httpd",pid=1749,fd=4),("httpd",pid=1748,fd=4),("httpd",pid=1747,fd=4))
+LISTEN     0      128       :::ssh                     :::*                     users:(("sshd",pid=1007,fd=4))
+LISTEN     0      100      ::1:smtp                    :::*                     users:(("master",pid=1244,fd=14))
+[root@localhost ~]# ss -ltpn
+State      Recv-Q Send-Q Local Address:Port               Peer Address:Port
+LISTEN     0      128          *:22                       *:*                   users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:25                       *:*                   users:(("master",pid=1244,fd=13))
+LISTEN     0      128         :::80                      :::*                   users:(("httpd",pid=1752,fd=4),("httpd",pid=1751,fd=4),("httpd",pid=1750,fd=4),("httpd",pid=1749,fd=4),("httpd",pid=1748,fd=4),("httpd",pid=1747,fd=4))
+LISTEN     0      128         :::22                      :::*                   users:(("sshd",pid=1007,fd=4))
+LISTEN     0      100        ::1:25                      :::*                   users:(("master",pid=1244,fd=14))
+[root@localhost ~]# cd /var/www/html/
+[root@localhost html]# ls
+[root@localhost html]# vi emon.html
+[root@localhost html]# ls
+emon.html
+[root@localhost html]# tail -f /var/log/httpd/access_log
+192.168.13.2 - - [14/Apr/2018:23:10:01 +0900] "GET /emon.html HTTP/1.1" 304 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0"
+
+[root@localhost html]# yum install mod_ssl
+読み込んだプラグイン:fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ mod_ssl.x86_64 1:2.4.6-67.el7.centos.6 を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+================================================================================
+ Package       アーキテクチャー
+                            バージョン                      リポジトリー   容量
+================================================================================
+インストール中:
+ mod_ssl       x86_64       1:2.4.6-67.el7.centos.6         updates       109 k
+
+トランザクションの要約
+================================================================================
+インストール  1 パッケージ
+
+総ダウンロード容量: 109 k
+インストール容量: 224 k
+Is this ok [y/d/N]: y
+Downloading packages:
+mod_ssl-2.4.6-67.el7.centos.6.x86_64.rpm                   | 109 kB   00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : 1:mod_ssl-2.4.6-67.el7.centos.6.x86_64          1/1
+  検証中                  : 1:mod_ssl-2.4.6-67.el7.centos.6.x86_64          1/1
+
+インストール:
+  mod_ssl.x86_64 1:2.4.6-67.el7.centos.6
+
+完了しました!
+[root@localhost html]# systemctl restart httpd
+[root@localhost html]# systemctl status httpd
+● httpd.service - The Apache HTTP Server
+   Loaded: loaded (/usr/lib/systemd/system/httpd.service; disabled; vendor preset: disabled)
+   Active: active (running) since 土 2018-04-14 23:10:53 JST; 6s ago
+     Docs: man:httpd(8)
+           man:apachectl(8)
+  Process: 1844 ExecStop=/bin/kill -WINCH ${MAINPID} (code=exited, status=0/SUCCESS)
+ Main PID: 1848 (httpd)
+   Status: "Processing requests..."
+   CGroup: /system.slice/httpd.service
+           ├─1848 /usr/sbin/httpd -DFOREGROUND
+           ├─1849 /usr/sbin/httpd -DFOREGROUND
+           ├─1850 /usr/sbin/httpd -DFOREGROUND
+           ├─1851 /usr/sbin/httpd -DFOREGROUND
+           ├─1852 /usr/sbin/httpd -DFOREGROUND
+           └─1853 /usr/sbin/httpd -DFOREGROUND
+
+ 4月 14 23:10:53 localhost.localdomain systemd[1]: Starting The Apache HTTP ...
+ 4月 14 23:10:53 localhost.localdomain httpd[1848]: AH00558: httpd: Could no...
+ 4月 14 23:10:53 localhost.localdomain systemd[1]: Started The Apache HTTP S...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost html]# ss -ltp
+State      Recv-Q Send-Q Local Address:Port                 Peer Address:Port
+LISTEN     0      128        *:ssh                      *:*                     users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:smtp                     *:*                     users:(("master",pid=1244,fd=13))
+LISTEN     0      128       :::http                    :::*                     users:(("httpd",pid=1853,fd=4),("httpd",pid=1852,fd=4),("httpd",pid=1851,fd=4),("httpd",pid=1850,fd=4),("httpd",pid=1849,fd=4),("httpd",pid=1848,fd=4))
+LISTEN     0      128       :::ssh                     :::*                     users:(("sshd",pid=1007,fd=4))
+LISTEN     0      100      ::1:smtp                    :::*                     users:(("master",pid=1244,fd=14))
+LISTEN     0      128       :::https                   :::*                     users:(("httpd",pid=1853,fd=6),("httpd",pid=1852,fd=6),("httpd",pid=1851,fd=6),("httpd",pid=1850,fd=6),("httpd",pid=1849,fd=6),("httpd",pid=1848,fd=6))
+[root@localhost html]# ss -ltpn
+State      Recv-Q Send-Q Local Address:Port               Peer Address:Port
+LISTEN     0      128          *:22                       *:*                   users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:25                       *:*                   users:(("master",pid=1244,fd=13))
+LISTEN     0      128         :::80                      :::*                   users:(("httpd",pid=1853,fd=4),("httpd",pid=1852,fd=4),("httpd",pid=1851,fd=4),("httpd",pid=1850,fd=4),("httpd",pid=1849,fd=4),("httpd",pid=1848,fd=4))
+LISTEN     0      128         :::22                      :::*                   users:(("sshd",pid=1007,fd=4))
+LISTEN     0      100        ::1:25                      :::*                   users:(("master",pid=1244,fd=14))
+LISTEN     0      128         :::443                     :::*                   users:(("httpd",pid=1853,fd=6),("httpd",pid=1852,fd=6),("httpd",pid=1851,fd=6),("httpd",pid=1850,fd=6),("httpd",pid=1849,fd=6),("httpd",pid=1848,fd=6))
+[root@localhost html]# cat /etc/httpd/conf.d/ssl.conf
+#
+# When we also provide SSL we have to listen to the
+# the HTTPS port in addition.
+#
+Listen 443 https
+
+##
+##  SSL Global Context
+##
+##  All SSL configuration in this context applies both to
+##  the main server and all SSL-enabled virtual hosts.
+##
+
+#   Pass Phrase Dialog:
+#   Configure the pass phrase gathering process.
+#   The filtering dialog program (`builtin' is a internal
+#   terminal dialog) has to provide the pass phrase on stdout.
+SSLPassPhraseDialog exec:/usr/libexec/httpd-ssl-pass-dialog
+
+#   Inter-Process Session Cache:
+#   Configure the SSL Session Cache: First the mechanism
+#   to use and second the expiring timeout (in seconds).
+SSLSessionCache         shmcb:/run/httpd/sslcache(512000)
+SSLSessionCacheTimeout  300
+
+#   Pseudo Random Number Generator (PRNG):
+#   Configure one or more sources to seed the PRNG of the
+#   SSL library. The seed data should be of good random quality.
+#   WARNING! On some platforms /dev/random blocks if not enough entropy
+#   is available. This means you then cannot use the /dev/random device
+#   because it would lead to very long connection times (as long as
+#   it requires to make more entropy available). But usually those
+#   platforms additionally provide a /dev/urandom device which doesn't
+#   block. So, if available, use this one instead. Read the mod_ssl User
+#   Manual for more details.
+SSLRandomSeed startup file:/dev/urandom  256
+SSLRandomSeed connect builtin
+#SSLRandomSeed startup file:/dev/random  512
+#SSLRandomSeed connect file:/dev/random  512
+#SSLRandomSeed connect file:/dev/urandom 512
+
+#
+# Use "SSLCryptoDevice" to enable any supported hardware
+# accelerators. Use "openssl engine -v" to list supported
+# engine names.  NOTE: If you enable an accelerator and the
+# server does not start, consult the error logs and ensure
+# your accelerator is functioning properly.
+#
+SSLCryptoDevice builtin
+#SSLCryptoDevice ubsec
+
+##
+## SSL Virtual Host Context
+##
+
+<VirtualHost _default_:443>
+
+# General setup for the virtual host, inherited from global configuration
+#DocumentRoot "/var/www/html"
+#ServerName www.example.com:443
+
+# Use separate log files for the SSL virtual host; note that LogLevel
+# is not inherited from httpd.conf.
+ErrorLog logs/ssl_error_log
+TransferLog logs/ssl_access_log
+LogLevel warn
+
+#   SSL Engine Switch:
+#   Enable/Disable SSL for this virtual host.
+SSLEngine on
+
+#   SSL Protocol support:
+# List the enable protocol levels with which clients will be able to
+# connect.  Disable SSLv2 access by default:
+SSLProtocol all -SSLv2
+
+#   SSL Cipher Suite:
+#   List the ciphers that the client is permitted to negotiate.
+#   See the mod_ssl documentation for a complete list.
+SSLCipherSuite HIGH:MEDIUM:!aNULL:!MD5:!SEED:!IDEA
+
+#   Speed-optimized SSL Cipher configuration:
+#   If speed is your main concern (on busy HTTPS servers e.g.),
+#   you might want to force clients to specific, performance
+#   optimized ciphers. In this case, prepend those ciphers
+#   to the SSLCipherSuite list, and enable SSLHonorCipherOrder.
+#   Caveat: by giving precedence to RC4-SHA and AES128-SHA
+#   (as in the example below), most connections will no longer
+#   have perfect forward secrecy - if the server's key is
+#   compromised, captures of past or future traffic must be
+#   considered compromised, too.
+#SSLCipherSuite RC4-SHA:AES128-SHA:HIGH:MEDIUM:!aNULL:!MD5
+#SSLHonorCipherOrder on
+
+#   Server Certificate:
+# Point SSLCertificateFile at a PEM encoded certificate.  If
+# the certificate is encrypted, then you will be prompted for a
+# pass phrase.  Note that a kill -HUP will prompt again.  A new
+# certificate can be generated using the genkey(1) command.
+SSLCertificateFile /etc/pki/tls/certs/localhost.crt
+
+#   Server Private Key:
+#   If the key is not combined with the certificate, use this
+#   directive to point at the key file.  Keep in mind that if
+#   you've both a RSA and a DSA private key you can configure
+#   both in parallel (to also allow the use of DSA ciphers, etc.)
+SSLCertificateKeyFile /etc/pki/tls/private/localhost.key
+
+#   Server Certificate Chain:
+#   Point SSLCertificateChainFile at a file containing the
+#   concatenation of PEM encoded CA certificates which form the
+#   certificate chain for the server certificate. Alternatively
+#   the referenced file can be the same as SSLCertificateFile
+#   when the CA certificates are directly appended to the server
+#   certificate for convinience.
+#SSLCertificateChainFile /etc/pki/tls/certs/server-chain.crt
+
+#   Certificate Authority (CA):
+#   Set the CA certificate verification path where to find CA
+#   certificates for client authentication or alternatively one
+#   huge file containing all of them (file must be PEM encoded)
+#SSLCACertificateFile /etc/pki/tls/certs/ca-bundle.crt
+
+#   Client Authentication (Type):
+#   Client certificate verification type and depth.  Types are
+#   none, optional, require and optional_no_ca.  Depth is a
+#   number which specifies how deeply to verify the certificate
+#   issuer chain before deciding the certificate is not valid.
+#SSLVerifyClient require
+#SSLVerifyDepth  10
+
+#   Access Control:
+#   With SSLRequire you can do per-directory access control based
+#   on arbitrary complex boolean expressions containing server
+#   variable checks and other lookup directives.  The syntax is a
+#   mixture between C and Perl.  See the mod_ssl documentation
+#   for more details.
+#<Location />
+#SSLRequire (    %{SSL_CIPHER} !~ m/^(EXP|NULL)/ \
+#            and %{SSL_CLIENT_S_DN_O} eq "Snake Oil, Ltd." \
+#            and %{SSL_CLIENT_S_DN_OU} in {"Staff", "CA", "Dev"} \
+#            and %{TIME_WDAY} >= 1 and %{TIME_WDAY} <= 5 \
+#            and %{TIME_HOUR} >= 8 and %{TIME_HOUR} <= 20       ) \
+#           or %{REMOTE_ADDR} =~ m/^192\.76\.162\.[0-9]+$/
+#</Location>
+
+#   SSL Engine Options:
+#   Set various options for the SSL engine.
+#   o FakeBasicAuth:
+#     Translate the client X.509 into a Basic Authorisation.  This means that
+#     the standard Auth/DBMAuth methods can be used for access control.  The
+#     user name is the `one line' version of the client's X.509 certificate.
+#     Note that no password is obtained from the user. Every entry in the user
+#     file needs this password: `xxj31ZMTZzkVA'.
+#   o ExportCertData:
+#     This exports two additional environment variables: SSL_CLIENT_CERT and
+#     SSL_SERVER_CERT. These contain the PEM-encoded certificates of the
+#     server (always existing) and the client (only existing when client
+#     authentication is used). This can be used to import the certificates
+#     into CGI scripts.
+#   o StdEnvVars:
+#     This exports the standard SSL/TLS related `SSL_*' environment variables.
+#     Per default this exportation is switched off for performance reasons,
+#     because the extraction step is an expensive operation and is usually
+#     useless for serving static content. So one usually enables the
+#     exportation for CGI and SSI requests only.
+#   o StrictRequire:
+#     This denies access when "SSLRequireSSL" or "SSLRequire" applied even
+#     under a "Satisfy any" situation, i.e. when it applies access is denied
+#     and no other module can change it.
+#   o OptRenegotiate:
+#     This enables optimized SSL connection renegotiation handling when SSL
+#     directives are used in per-directory context.
+#SSLOptions +FakeBasicAuth +ExportCertData +StrictRequire
+<Files ~ "\.(cgi|shtml|phtml|php3?)$">
+    SSLOptions +StdEnvVars
+</Files>
+<Directory "/var/www/cgi-bin">
+    SSLOptions +StdEnvVars
+</Directory>
+
+#   SSL Protocol Adjustments:
+#   The safe and default but still SSL/TLS standard compliant shutdown
+#   approach is that mod_ssl sends the close notify alert but doesn't wait for
+#   the close notify alert from client. When you need a different shutdown
+#   approach you can use one of the following variables:
+#   o ssl-unclean-shutdown:
+#     This forces an unclean shutdown when the connection is closed, i.e. no
+#     SSL close notify alert is send or allowed to received.  This violates
+#     the SSL/TLS standard but is needed for some brain-dead browsers. Use
+#     this when you receive I/O errors because of the standard approach where
+#     mod_ssl sends the close notify alert.
+#   o ssl-accurate-shutdown:
+#     This forces an accurate shutdown when the connection is closed, i.e. a
+#     SSL close notify alert is send and mod_ssl waits for the close notify
+#     alert of the client. This is 100% SSL/TLS standard compliant, but in
+#     practice often causes hanging connections with brain-dead browsers. Use
+#     this only for browsers where you know that their SSL implementation
+#     works correctly.
+#   Notice: Most problems of broken clients are also related to the HTTP
+#   keep-alive facility, so you usually additionally want to disable
+#   keep-alive for those clients, too. Use variable "nokeepalive" for this.
+#   Similarly, one has to force some clients to use HTTP/1.0 to workaround
+#   their broken HTTP/1.1 implementation. Use variables "downgrade-1.0" and
+#   "force-response-1.0" for this.
+BrowserMatch "MSIE [2-5]" \
+         nokeepalive ssl-unclean-shutdown \
+         downgrade-1.0 force-response-1.0
+
+#   Per-Server Logging:
+#   The home of a custom SSL log file. Use this when you want a
+#   compact non-error SSL logfile on a virtual host basis.
+CustomLog logs/ssl_request_log \
+          "%t %h %{SSL_PROTOCOL}x %{SSL_CIPHER}x \"%r\" %b"
+
+</VirtualHost>
+[root@localhost html]# cat /etc/httpd/conf/httpd.conf
+#
+# This is the main Apache HTTP server configuration file.  It contains the
+# configuration directives that give the server its instructions.
+# See <URL:http://httpd.apache.org/docs/2.4/> for detailed information.
+# In particular, see
+# <URL:http://httpd.apache.org/docs/2.4/mod/directives.html>
+# for a discussion of each configuration directive.
+#
+# Do NOT simply read the instructions in here without understanding
+# what they do.  They're here only as hints or reminders.  If you are unsure
+# consult the online docs. You have been warned.
+#
+# Configuration and logfile names: If the filenames you specify for many
+# of the server's control files begin with "/" (or "drive:/" for Win32), the
+# server will use that explicit path.  If the filenames do *not* begin
+# with "/", the value of ServerRoot is prepended -- so 'log/access_log'
+# with ServerRoot set to '/www' will be interpreted by the
+# server as '/www/log/access_log', where as '/log/access_log' will be
+# interpreted as '/log/access_log'.
+
+#
+# ServerRoot: The top of the directory tree under which the server's
+# configuration, error, and log files are kept.
+#
+# Do not add a slash at the end of the directory path.  If you point
+# ServerRoot at a non-local disk, be sure to specify a local disk on the
+# Mutex directive, if file-based mutexes are used.  If you wish to share the
+# same ServerRoot for multiple httpd daemons, you will need to change at
+# least PidFile.
+#
+ServerRoot "/etc/httpd"
+
+#
+# Listen: Allows you to bind Apache to specific IP addresses and/or
+# ports, instead of the default. See also the <VirtualHost>
+# directive.
+#
+# Change this to Listen on specific IP addresses as shown below to
+# prevent Apache from glomming onto all bound IP addresses.
+#
+#Listen 12.34.56.78:80
+Listen 80
+
+#
+# Dynamic Shared Object (DSO) Support
+#
+# To be able to use the functionality of a module which was built as a DSO you
+# have to place corresponding `LoadModule' lines at this location so the
+# directives contained in it are actually available _before_ they are used.
+# Statically compiled modules (those listed by `httpd -l') do not need
+# to be loaded here.
+#
+# Example:
+# LoadModule foo_module modules/mod_foo.so
+#
+Include conf.modules.d/*.conf
+
+#
+# If you wish httpd to run as a different user or group, you must run
+# httpd as root initially and it will switch.
+#
+# User/Group: The name (or #number) of the user/group to run httpd as.
+# It is usually good practice to create a dedicated user and group for
+# running httpd, as with most system services.
+#
+User apache
+Group apache
+
+# 'Main' server configuration
+#
+# The directives in this section set up the values used by the 'main'
+# server, which responds to any requests that aren't handled by a
+# <VirtualHost> definition.  These values also provide defaults for
+# any <VirtualHost> containers you may define later in the file.
+#
+# All of these directives may appear inside <VirtualHost> containers,
+# in which case these default settings will be overridden for the
+# virtual host being defined.
+#
+
+#
+# ServerAdmin: Your address, where problems with the server should be
+# e-mailed.  This address appears on some server-generated pages, such
+# as error documents.  e.g. admin@your-domain.com
+#
+ServerAdmin root@localhost
+
+#
+# ServerName gives the name and port that the server uses to identify itself.
+# This can often be determined automatically, but we recommend you specify
+# it explicitly to prevent problems during startup.
+#
+# If your host doesn't have a registered DNS name, enter its IP address here.
+#
+#ServerName www.example.com:80
+
+#
+# Deny access to the entirety of your server's filesystem. You must
+# explicitly permit access to web content directories in other
+# <Directory> blocks below.
+#
+<Directory />
+    AllowOverride none
+    Require all denied
+</Directory>
+
+#
+# Note that from this point forward you must specifically allow
+# particular features to be enabled - so if something's not working as
+# you might expect, make sure that you have specifically enabled it
+# below.
+#
+
+#
+# DocumentRoot: The directory out of which you will serve your
+# documents. By default, all requests are taken from this directory, but
+# symbolic links and aliases may be used to point to other locations.
+#
+DocumentRoot "/var/www/html"
+
+#
+# Relax access to content within /var/www.
+#
+<Directory "/var/www">
+    AllowOverride None
+    # Allow open access:
+    Require all granted
+</Directory>
+
+# Further relax access to the default document root:
+<Directory "/var/www/html">
+    #
+    # Possible values for the Options directive are "None", "All",
+    # or any combination of:
+    #   Indexes Includes FollowSymLinks SymLinksifOwnerMatch ExecCGI MultiViews
+    #
+    # Note that "MultiViews" must be named *explicitly* --- "Options All"
+    # doesn't give it to you.
+    #
+    # The Options directive is both complicated and important.  Please see
+    # http://httpd.apache.org/docs/2.4/mod/core.html#options
+    # for more information.
+    #
+    Options Indexes FollowSymLinks
+
+    #
+    # AllowOverride controls what directives may be placed in .htaccess files.
+    # It can be "All", "None", or any combination of the keywords:
+    #   Options FileInfo AuthConfig Limit
+    #
+    AllowOverride None
+
+    #
+    # Controls who can get stuff from this server.
+    #
+    Require all granted
+</Directory>
+
+#
+# DirectoryIndex: sets the file that Apache will serve if a directory
+# is requested.
+#
+<IfModule dir_module>
+    DirectoryIndex index.html
+</IfModule>
+
+#
+# The following lines prevent .htaccess and .htpasswd files from being
+# viewed by Web clients.
+#
+<Files ".ht*">
+    Require all denied
+</Files>
+
+#
+# ErrorLog: The location of the error log file.
+# If you do not specify an ErrorLog directive within a <VirtualHost>
+# container, error messages relating to that virtual host will be
+# logged here.  If you *do* define an error logfile for a <VirtualHost>
+# container, that host's errors will be logged there and not here.
+#
+ErrorLog "logs/error_log"
+
+#
+# LogLevel: Control the number of messages logged to the error_log.
+# Possible values include: debug, info, notice, warn, error, crit,
+# alert, emerg.
+#
+LogLevel warn
+
+<IfModule log_config_module>
+    #
+    # The following directives define some format nicknames for use with
+    # a CustomLog directive (see below).
+    #
+    LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\"" combined
+    LogFormat "%h %l %u %t \"%r\" %>s %b" common
+
+    <IfModule logio_module>
+      # You need to enable mod_logio.c to use %I and %O
+      LogFormat "%h %l %u %t \"%r\" %>s %b \"%{Referer}i\" \"%{User-Agent}i\" %I %O" combinedio
+    </IfModule>
+
+    #
+    # The location and format of the access logfile (Common Logfile Format).
+    # If you do not define any access logfiles within a <VirtualHost>
+    # container, they will be logged here.  Contrariwise, if you *do*
+    # define per-<VirtualHost> access logfiles, transactions will be
+    # logged therein and *not* in this file.
+    #
+    #CustomLog "logs/access_log" common
+
+    #
+    # If you prefer a logfile with access, agent, and referer information
+    # (Combined Logfile Format) you can use the following directive.
+    #
+    CustomLog "logs/access_log" combined
+</IfModule>
+
+<IfModule alias_module>
+    #
+    # Redirect: Allows you to tell clients about documents that used to
+    # exist in your server's namespace, but do not anymore. The client
+    # will make a new request for the document at its new location.
+    # Example:
+    # Redirect permanent /foo http://www.example.com/bar
+
+    #
+    # Alias: Maps web paths into filesystem paths and is used to
+    # access content that does not live under the DocumentRoot.
+    # Example:
+    # Alias /webpath /full/filesystem/path
+    #
+    # If you include a trailing / on /webpath then the server will
+    # require it to be present in the URL.  You will also likely
+    # need to provide a <Directory> section to allow access to
+    # the filesystem path.
+
+    #
+    # ScriptAlias: This controls which directories contain server scripts.
+    # ScriptAliases are essentially the same as Aliases, except that
+    # documents in the target directory are treated as applications and
+    # run by the server when requested rather than as documents sent to the
+    # client.  The same rules about trailing "/" apply to ScriptAlias
+    # directives as to Alias.
+    #
+    ScriptAlias /cgi-bin/ "/var/www/cgi-bin/"
+
+</IfModule>
+
+#
+# "/var/www/cgi-bin" should be changed to whatever your ScriptAliased
+# CGI directory exists, if you have that configured.
+#
+<Directory "/var/www/cgi-bin">
+    AllowOverride None
+    Options None
+    Require all granted
+</Directory>
+
+<IfModule mime_module>
+    #
+    # TypesConfig points to the file containing the list of mappings from
+    # filename extension to MIME-type.
+    #
+    TypesConfig /etc/mime.types
+
+    #
+    # AddType allows you to add to or override the MIME configuration
+    # file specified in TypesConfig for specific file types.
+    #
+    #AddType application/x-gzip .tgz
+    #
+    # AddEncoding allows you to have certain browsers uncompress
+    # information on the fly. Note: Not all browsers support this.
+    #
+    #AddEncoding x-compress .Z
+    #AddEncoding x-gzip .gz .tgz
+    #
+    # If the AddEncoding directives above are commented-out, then you
+    # probably should define those extensions to indicate media types:
+    #
+    AddType application/x-compress .Z
+    AddType application/x-gzip .gz .tgz
+
+    #
+    # AddHandler allows you to map certain file extensions to "handlers":
+    # actions unrelated to filetype. These can be either built into the server
+    # or added with the Action directive (see below)
+    #
+    # To use CGI scripts outside of ScriptAliased directories:
+    # (You will also need to add "ExecCGI" to the "Options" directive.)
+    #
+    #AddHandler cgi-script .cgi
+
+    # For type maps (negotiated resources):
+    #AddHandler type-map var
+
+    #
+    # Filters allow you to process content before it is sent to the client.
+    #
+    # To parse .shtml files for server-side includes (SSI):
+    # (You will also need to add "Includes" to the "Options" directive.)
+    #
+    AddType text/html .shtml
+    AddOutputFilter INCLUDES .shtml
+</IfModule>
+
+#
+# Specify a default charset for all content served; this enables
+# interpretation of all content as UTF-8 by default.  To use the
+# default browser choice (ISO-8859-1), or to allow the META tags
+# in HTML content to override this choice, comment out this
+# directive:
+#
+AddDefaultCharset UTF-8
+
+<IfModule mime_magic_module>
+    #
+    # The mod_mime_magic module allows the server to use various hints from the
+    # contents of the file itself to determine its type.  The MIMEMagicFile
+    # directive tells the module where the hint definitions are located.
+    #
+    MIMEMagicFile conf/magic
+</IfModule>
+
+#
+# Customizable error responses come in three flavors:
+# 1) plain text 2) local redirects 3) external redirects
+#
+# Some examples:
+#ErrorDocument 500 "The server made a boo boo."
+#ErrorDocument 404 /missing.html
+#ErrorDocument 404 "/cgi-bin/missing_handler.pl"
+#ErrorDocument 402 http://www.example.com/subscription_info.html
+#
+
+#
+# EnableMMAP and EnableSendfile: On systems that support it,
+# memory-mapping or the sendfile syscall may be used to deliver
+# files.  This usually improves server performance, but must
+# be turned off when serving from networked-mounted
+# filesystems or if support for these functions is otherwise
+# broken on your system.
+# Defaults if commented: EnableMMAP On, EnableSendfile Off
+#
+#EnableMMAP off
+EnableSendfile on
+
+# Supplemental configuration
+#
+# Load config files in the "/etc/httpd/conf.d" directory, if any.
+IncludeOptional conf.d/*.conf
+
+
+[root@localhost html]# htpasswd -b -c /etc/httpd/conf/.htpasswd kujirai password
+Adding password for user kujirai
+[root@localhost html]# htpasswd -b /etc/httpd/conf/.htpasswd takahiro password
+Adding password for user takahiro
+[root@localhost html]# vi /etc/httpd/conf/httpd.conf
+[root@localhost html]# mkdir /var/www/html/basic
+[root@localhost html]# echo "Conguratulation, Success Basic Authentication" > /var/www/html/basic/index.html
+[root@localhost html]# systemctl restart httpd
+
+
+[root@localhost conf]# yum install squid
+読み込んだプラグイン:fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ squid.x86_64 7:3.5.20-10.el7 を インストール
+--> 依存性の処理をしています: squid-migration-script のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(warnings) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(vars) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(strict) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(Pod::Usage) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(Net::POP3) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(IPC::Open2) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(Getopt::Std) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(Getopt::Long) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(FileHandle) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(English) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(Digest::MD5) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(Data::Dumper) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: perl(DBI) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: /usr/bin/perl のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: libltdl.so.7()(64bit) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> 依存性の処理をしています: libecap.so.3()(64bit) のパッケージ: 7:squid-3.5.20-10.el7.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ libecap.x86_64 0:1.0.0-1.el7 を インストール
+---> パッケージ libtool-ltdl.x86_64 0:2.4.2-22.el7_3 を インストール
+---> パッケージ perl.x86_64 4:5.16.3-292.el7 を インストール
+--> 依存性の処理をしています: perl-libs = 4:5.16.3-292.el7 のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Socket) >= 1.3 のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Scalar::Util) >= 1.10 のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl-macros のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl-libs のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(threads::shared) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(threads) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(constant) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Time::Local) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Time::HiRes) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Storable) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Socket) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Scalar::Util) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Pod::Simple::XHTML) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Pod::Simple::Search) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Filter::Util::Call) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(File::Temp) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(File::Spec::Unix) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(File::Spec::Functions) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(File::Spec) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(File::Path) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Exporter) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Cwd) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: perl(Carp) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+--> 依存性の処理をしています: libperl.so()(64bit) のパッケージ: 4:perl-5.16.3-292.el7.x86_64
+---> パッケージ perl-DBI.x86_64 0:1.627-4.el7 を インストール
+--> 依存性の処理をしています: perl(RPC::PlServer) >= 0.2001 のパッケージ: perl-DBI-1.627-4.el7.x86_64
+--> 依存性の処理をしています: perl(RPC::PlClient) >= 0.2000 のパッケージ: perl-DBI-1.627-4.el7.x86_64
+---> パッケージ perl-Data-Dumper.x86_64 0:2.145-3.el7 を インストール
+---> パッケージ perl-Digest-MD5.x86_64 0:2.52-3.el7 を インストール
+--> 依存性の処理をしています: perl(Digest::base) >= 1.00 のパッケージ: perl-Digest-MD5-2.52-3.el7.x86_64
+---> パッケージ perl-Getopt-Long.noarch 0:2.40-2.el7 を インストール
+--> 依存性の処理をしています: perl(Text::ParseWords) のパッケージ: perl-Getopt-Long-2.40-2.el7.noarch
+---> パッケージ perl-Pod-Usage.noarch 0:1.63-3.el7 を インストール
+--> 依存性の処理をしています: perl(Pod::Text) >= 3.15 のパッケージ: perl-Pod-Usage-1.63-3.el7.noarch
+--> 依存性の処理をしています: perl-Pod-Perldoc のパッケージ: perl-Pod-Usage-1.63-3.el7.noarch
+---> パッケージ squid-migration-script.x86_64 7:3.5.20-10.el7 を インストール
+--> トランザクションの確認を実行しています。
+---> パッケージ perl-Carp.noarch 0:1.26-244.el7 を インストール
+---> パッケージ perl-Digest.noarch 0:1.17-245.el7 を インストール
+---> パッケージ perl-Exporter.noarch 0:5.68-3.el7 を インストール
+---> パッケージ perl-File-Path.noarch 0:2.09-2.el7 を インストール
+---> パッケージ perl-File-Temp.noarch 0:0.23.01-3.el7 を インストール
+---> パッケージ perl-Filter.x86_64 0:1.49-3.el7 を インストール
+---> パッケージ perl-PathTools.x86_64 0:3.40-5.el7 を インストール
+---> パッケージ perl-PlRPC.noarch 0:0.2020-14.el7 を インストール
+--> 依存性の処理をしています: perl(Net::Daemon) >= 0.13 のパッケージ: perl-PlRPC-0.2020-14.el7.noarch
+--> 依存性の処理をしています: perl(Net::Daemon::Test) のパッケージ: perl-PlRPC-0.2020-14.el7.noarch
+--> 依存性の処理をしています: perl(Net::Daemon::Log) のパッケージ: perl-PlRPC-0.2020-14.el7.noarch
+--> 依存性の処理をしています: perl(Compress::Zlib) のパッケージ: perl-PlRPC-0.2020-14.el7.noarch
+---> パッケージ perl-Pod-Perldoc.noarch 0:3.20-4.el7 を インストール
+--> 依存性の処理をしています: perl(parent) のパッケージ: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> 依存性の処理をしています: perl(HTTP::Tiny) のパッケージ: perl-Pod-Perldoc-3.20-4.el7.noarch
+--> 依存性の処理をしています: perl(Encode) のパッケージ: perl-Pod-Perldoc-3.20-4.el7.noarch
+---> パッケージ perl-Pod-Simple.noarch 1:3.28-4.el7 を インストール
+--> 依存性の処理をしています: perl(Pod::Escapes) >= 1.04 のパッケージ: 1:perl-Pod-Simple-3.28-4.el7.noarch
+---> パッケージ perl-Scalar-List-Utils.x86_64 0:1.27-248.el7 を インストール
+---> パッケージ perl-Socket.x86_64 0:2.010-4.el7 を インストール
+---> パッケージ perl-Storable.x86_64 0:2.45-3.el7 を インストール
+---> パッケージ perl-Text-ParseWords.noarch 0:3.29-4.el7 を インストール
+---> パッケージ perl-Time-HiRes.x86_64 4:1.9725-3.el7 を インストール
+---> パッケージ perl-Time-Local.noarch 0:1.2300-2.el7 を インストール
+---> パッケージ perl-constant.noarch 0:1.27-2.el7 を インストール
+---> パッケージ perl-libs.x86_64 4:5.16.3-292.el7 を インストール
+---> パッケージ perl-macros.x86_64 4:5.16.3-292.el7 を インストール
+---> パッケージ perl-podlators.noarch 0:2.5.1-3.el7 を インストール
+---> パッケージ perl-threads.x86_64 0:1.87-4.el7 を インストール
+---> パッケージ perl-threads-shared.x86_64 0:1.43-6.el7 を インストール
+--> トランザクションの確認を実行しています。
+---> パッケージ perl-Encode.x86_64 0:2.51-7.el7 を インストール
+---> パッケージ perl-HTTP-Tiny.noarch 0:0.033-3.el7 を インストール
+---> パッケージ perl-IO-Compress.noarch 0:2.061-2.el7 を インストール
+--> 依存性の処理をしています: perl(Compress::Raw::Zlib) >= 2.061 のパッケージ: perl-IO-Compress-2.061-2.el7.noarch
+--> 依存性の処理をしています: perl(Compress::Raw::Bzip2) >= 2.061 のパッケージ: perl-IO-Compress-2.061-2.el7.noarch
+---> パッケージ perl-Net-Daemon.noarch 0:0.48-5.el7 を インストール
+---> パッケージ perl-Pod-Escapes.noarch 1:1.04-292.el7 を インストール
+---> パッケージ perl-parent.noarch 1:0.225-244.el7 を インストール
+--> トランザクションの確認を実行しています。
+---> パッケージ perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7 を インストール
+---> パッケージ perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7 を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+================================================================================
+ Package                      アーキテクチャー
+                                          バージョン            リポジトリー
+                                                                           容量
+================================================================================
+インストール中:
+ squid                        x86_64      7:3.5.20-10.el7       base      3.1 M
+依存性関連でのインストールをします:
+ libecap                      x86_64      1.0.0-1.el7           base       21 k
+ libtool-ltdl                 x86_64      2.4.2-22.el7_3        base       49 k
+ perl                         x86_64      4:5.16.3-292.el7      base      8.0 M
+ perl-Carp                    noarch      1.26-244.el7          base       19 k
+ perl-Compress-Raw-Bzip2      x86_64      2.061-3.el7           base       32 k
+ perl-Compress-Raw-Zlib       x86_64      1:2.061-4.el7         base       57 k
+ perl-DBI                     x86_64      1.627-4.el7           base      802 k
+ perl-Data-Dumper             x86_64      2.145-3.el7           base       47 k
+ perl-Digest                  noarch      1.17-245.el7          base       23 k
+ perl-Digest-MD5              x86_64      2.52-3.el7            base       30 k
+ perl-Encode                  x86_64      2.51-7.el7            base      1.5 M
+ perl-Exporter                noarch      5.68-3.el7            base       28 k
+ perl-File-Path               noarch      2.09-2.el7            base       26 k
+ perl-File-Temp               noarch      0.23.01-3.el7         base       56 k
+ perl-Filter                  x86_64      1.49-3.el7            base       76 k
+ perl-Getopt-Long             noarch      2.40-2.el7            base       56 k
+ perl-HTTP-Tiny               noarch      0.033-3.el7           base       38 k
+ perl-IO-Compress             noarch      2.061-2.el7           base      260 k
+ perl-Net-Daemon              noarch      0.48-5.el7            base       51 k
+ perl-PathTools               x86_64      3.40-5.el7            base       82 k
+ perl-PlRPC                   noarch      0.2020-14.el7         base       36 k
+ perl-Pod-Escapes             noarch      1:1.04-292.el7        base       51 k
+ perl-Pod-Perldoc             noarch      3.20-4.el7            base       87 k
+ perl-Pod-Simple              noarch      1:3.28-4.el7          base      216 k
+ perl-Pod-Usage               noarch      1.63-3.el7            base       27 k
+ perl-Scalar-List-Utils       x86_64      1.27-248.el7          base       36 k
+ perl-Socket                  x86_64      2.010-4.el7           base       49 k
+ perl-Storable                x86_64      2.45-3.el7            base       77 k
+ perl-Text-ParseWords         noarch      3.29-4.el7            base       14 k
+ perl-Time-HiRes              x86_64      4:1.9725-3.el7        base       45 k
+ perl-Time-Local              noarch      1.2300-2.el7          base       24 k
+ perl-constant                noarch      1.27-2.el7            base       19 k
+ perl-libs                    x86_64      4:5.16.3-292.el7      base      688 k
+ perl-macros                  x86_64      4:5.16.3-292.el7      base       43 k
+ perl-parent                  noarch      1:0.225-244.el7       base       12 k
+ perl-podlators               noarch      2.5.1-3.el7           base      112 k
+ perl-threads                 x86_64      1.87-4.el7            base       49 k
+ perl-threads-shared          x86_64      1.43-6.el7            base       39 k
+ squid-migration-script       x86_64      7:3.5.20-10.el7       base       48 k
+
+トランザクションの要約
+================================================================================
+インストール  1 パッケージ (+39 個の依存関係のパッケージ)
+
+総ダウンロード容量: 16 M
+インストール容量: 50 M
+Is this ok [y/d/N]: y
+Downloading packages:
+(1/40): libecap-1.0.0-1.el7.x86_64.rpm                     |  21 kB   00:00
+(2/40): perl-Carp-1.26-244.el7.noarch.rpm                  |  19 kB   00:00
+(3/40): perl-Compress-Raw-Zlib-2.061-4.el7.x86_64.rpm      |  57 kB   00:00
+(4/40): perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64.rpm     |  32 kB   00:00
+(5/40): perl-Data-Dumper-2.145-3.el7.x86_64.rpm            |  47 kB   00:00
+(6/40): libtool-ltdl-2.4.2-22.el7_3.x86_64.rpm             |  49 kB   00:00
+(7/40): perl-Digest-MD5-2.52-3.el7.x86_64.rpm              |  30 kB   00:00
+(8/40): perl-Digest-1.17-245.el7.noarch.rpm                |  23 kB   00:00
+(9/40): perl-Exporter-5.68-3.el7.noarch.rpm                |  28 kB   00:00
+(10/40): perl-File-Path-2.09-2.el7.noarch.rpm              |  26 kB   00:00
+(11/40): perl-File-Temp-0.23.01-3.el7.noarch.rpm           |  56 kB   00:00
+(12/40): perl-Getopt-Long-2.40-2.el7.noarch.rpm            |  56 kB   00:00
+(13/40): perl-Filter-1.49-3.el7.x86_64.rpm                 |  76 kB   00:00
+(14/40): perl-HTTP-Tiny-0.033-3.el7.noarch.rpm             |  38 kB   00:00
+(15/40): perl-DBI-1.627-4.el7.x86_64.rpm                   | 802 kB   00:01
+(16/40): perl-PathTools-3.40-5.el7.x86_64.rpm              |  82 kB   00:00
+(17/40): perl-Encode-2.51-7.el7.x86_64.rpm                 | 1.5 MB   00:02
+(18/40): perl-PlRPC-0.2020-14.el7.noarch.rpm               |  36 kB   00:00
+(19/40): perl-Net-Daemon-0.48-5.el7.noarch.rpm             |  51 kB   00:01
+(20/40): perl-Pod-Escapes-1.04-292.el7.noarch.rpm          |  51 kB   00:00
+(21/40): perl-Pod-Perldoc-3.20-4.el7.noarch.rpm            |  87 kB   00:00
+(22/40): perl-Pod-Usage-1.63-3.el7.noarch.rpm              |  27 kB   00:00
+(23/40): perl-Scalar-List-Utils-1.27-248.el7.x86_64.rpm    |  36 kB   00:00
+(24/40): perl-Socket-2.010-4.el7.x86_64.rpm                |  49 kB   00:00
+(25/40): perl-Pod-Simple-3.28-4.el7.noarch.rpm             | 216 kB   00:00
+(26/40): perl-Storable-2.45-3.el7.x86_64.rpm               |  77 kB   00:00
+(27/40): perl-Time-Local-1.2300-2.el7.noarch.rpm           |  24 kB   00:00
+(28/40): perl-Text-ParseWords-3.29-4.el7.noarch.rpm        |  14 kB   00:00
+(29/40): perl-constant-1.27-2.el7.noarch.rpm               |  19 kB   00:00
+(30/40): perl-Time-HiRes-1.9725-3.el7.x86_64.rpm           |  45 kB   00:00
+(31/40): perl-parent-0.225-244.el7.noarch.rpm              |  12 kB   00:00
+(32/40): perl-macros-5.16.3-292.el7.x86_64.rpm             |  43 kB   00:00
+(33/40): perl-IO-Compress-2.061-2.el7.noarch.rpm           | 260 kB   00:03
+(34/40): perl-podlators-2.5.1-3.el7.noarch.rpm             | 112 kB   00:00
+(35/40): perl-libs-5.16.3-292.el7.x86_64.rpm               | 688 kB   00:00
+(36/40): perl-threads-1.87-4.el7.x86_64.rpm                |  49 kB   00:00
+(37/40): squid-migration-script-3.5.20-10.el7.x86_64.rpm   |  48 kB   00:00
+(38/40): perl-5.16.3-292.el7.x86_64.rpm                    | 8.0 MB   00:05
+(39/40): perl-threads-shared-1.43-6.el7.x86_64.rpm         |  39 kB   00:00
+(40/40): squid-3.5.20-10.el7.x86_64.rpm                    | 3.1 MB   00:02
+--------------------------------------------------------------------------------
+合計                                               2.2 MB/s |  16 MB  00:07
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : 1:perl-parent-0.225-244.el7.noarch             1/40
+  インストール中          : perl-HTTP-Tiny-0.033-3.el7.noarch              2/40
+  インストール中          : perl-podlators-2.5.1-3.el7.noarch              3/40
+  インストール中          : perl-Pod-Perldoc-3.20-4.el7.noarch             4/40
+  インストール中          : 1:perl-Pod-Escapes-1.04-292.el7.noarch         5/40
+  インストール中          : perl-Text-ParseWords-3.29-4.el7.noarch         6/40
+  インストール中          : perl-Encode-2.51-7.el7.x86_64                  7/40
+  インストール中          : perl-Pod-Usage-1.63-3.el7.noarch               8/40
+  インストール中          : 4:perl-macros-5.16.3-292.el7.x86_64            9/40
+  インストール中          : 4:perl-libs-5.16.3-292.el7.x86_64             10/40
+  インストール中          : perl-Storable-2.45-3.el7.x86_64               11/40
+  インストール中          : perl-Exporter-5.68-3.el7.noarch               12/40
+  インストール中          : perl-constant-1.27-2.el7.noarch               13/40
+  インストール中          : perl-Time-Local-1.2300-2.el7.noarch           14/40
+  インストール中          : perl-Socket-2.010-4.el7.x86_64                15/40
+  インストール中          : perl-Carp-1.26-244.el7.noarch                 16/40
+  インストール中          : 4:perl-Time-HiRes-1.9725-3.el7.x86_64         17/40
+  インストール中          : perl-PathTools-3.40-5.el7.x86_64              18/40
+  インストール中          : perl-Scalar-List-Utils-1.27-248.el7.x86_64    19/40
+  インストール中          : perl-File-Temp-0.23.01-3.el7.noarch           20/40
+  インストール中          : perl-File-Path-2.09-2.el7.noarch              21/40
+  インストール中          : perl-threads-shared-1.43-6.el7.x86_64         22/40
+  インストール中          : perl-threads-1.87-4.el7.x86_64                23/40
+  インストール中          : perl-Filter-1.49-3.el7.x86_64                 24/40
+  インストール中          : 1:perl-Pod-Simple-3.28-4.el7.noarch           25/40
+  インストール中          : perl-Getopt-Long-2.40-2.el7.noarch            26/40
+  インストール中          : 4:perl-5.16.3-292.el7.x86_64                  27/40
+  インストール中          : perl-Data-Dumper-2.145-3.el7.x86_64           28/40
+  インストール中          : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64    29/40
+  インストール中          : perl-Net-Daemon-0.48-5.el7.noarch             30/40
+  インストール中          : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64   31/40
+  インストール中          : perl-IO-Compress-2.061-2.el7.noarch           32/40
+  インストール中          : perl-PlRPC-0.2020-14.el7.noarch               33/40
+  インストール中          : perl-DBI-1.627-4.el7.x86_64                   34/40
+  インストール中          : perl-Digest-1.17-245.el7.noarch               35/40
+  インストール中          : perl-Digest-MD5-2.52-3.el7.x86_64             36/40
+  インストール中          : libecap-1.0.0-1.el7.x86_64                    37/40
+  インストール中          : 7:squid-migration-script-3.5.20-10.el7.x86_   38/40
+  インストール中          : libtool-ltdl-2.4.2-22.el7_3.x86_64            39/40
+  インストール中          : 7:squid-3.5.20-10.el7.x86_64                  40/40
+  検証中                  : perl-HTTP-Tiny-0.033-3.el7.noarch              1/40
+  検証中                  : perl-threads-shared-1.43-6.el7.x86_64          2/40
+  検証中                  : perl-Storable-2.45-3.el7.x86_64                3/40
+  検証中                  : perl-IO-Compress-2.061-2.el7.noarch            4/40
+  検証中                  : perl-Exporter-5.68-3.el7.noarch                5/40
+  検証中                  : perl-constant-1.27-2.el7.noarch                6/40
+  検証中                  : perl-PathTools-3.40-5.el7.x86_64               7/40
+  検証中                  : 4:perl-macros-5.16.3-292.el7.x86_64            8/40
+  検証中                  : perl-Compress-Raw-Bzip2-2.061-3.el7.x86_64     9/40
+  検証中                  : 1:perl-parent-0.225-244.el7.noarch            10/40
+  検証中                  : perl-Net-Daemon-0.48-5.el7.noarch             11/40
+  検証中                  : 4:perl-5.16.3-292.el7.x86_64                  12/40
+  検証中                  : perl-Digest-MD5-2.52-3.el7.x86_64             13/40
+  検証中                  : perl-File-Temp-0.23.01-3.el7.noarch           14/40
+  検証中                  : 1:perl-Pod-Simple-3.28-4.el7.noarch           15/40
+  検証中                  : libtool-ltdl-2.4.2-22.el7_3.x86_64            16/40
+  検証中                  : perl-Time-Local-1.2300-2.el7.noarch           17/40
+  検証中                  : 4:perl-libs-5.16.3-292.el7.x86_64             18/40
+  検証中                  : perl-Pod-Perldoc-3.20-4.el7.noarch            19/40
+  検証中                  : 7:squid-migration-script-3.5.20-10.el7.x86_   20/40
+  検証中                  : perl-Socket-2.010-4.el7.x86_64                21/40
+  検証中                  : perl-Carp-1.26-244.el7.noarch                 22/40
+  検証中                  : perl-Data-Dumper-2.145-3.el7.x86_64           23/40
+  検証中                  : libecap-1.0.0-1.el7.x86_64                    24/40
+  検証中                  : 4:perl-Time-HiRes-1.9725-3.el7.x86_64         25/40
+  検証中                  : perl-Scalar-List-Utils-1.27-248.el7.x86_64    26/40
+  検証中                  : 1:perl-Compress-Raw-Zlib-2.061-4.el7.x86_64   27/40
+  検証中                  : 1:perl-Pod-Escapes-1.04-292.el7.noarch        28/40
+  検証中                  : perl-PlRPC-0.2020-14.el7.noarch               29/40
+  検証中                  : perl-Pod-Usage-1.63-3.el7.noarch              30/40
+  検証中                  : perl-DBI-1.627-4.el7.x86_64                   31/40
+  検証中                  : 7:squid-3.5.20-10.el7.x86_64                  32/40
+  検証中                  : perl-Encode-2.51-7.el7.x86_64                 33/40
+  検証中                  : perl-podlators-2.5.1-3.el7.noarch             34/40
+  検証中                  : perl-Getopt-Long-2.40-2.el7.noarch            35/40
+  検証中                  : perl-File-Path-2.09-2.el7.noarch              36/40
+  検証中                  : perl-threads-1.87-4.el7.x86_64                37/40
+  検証中                  : perl-Filter-1.49-3.el7.x86_64                 38/40
+  検証中                  : perl-Text-ParseWords-3.29-4.el7.noarch        39/40
+  検証中                  : perl-Digest-1.17-245.el7.noarch               40/40
+
+インストール:
+  squid.x86_64 7:3.5.20-10.el7
+
+依存性関連をインストールしました:
+  libecap.x86_64 0:1.0.0-1.el7
+  libtool-ltdl.x86_64 0:2.4.2-22.el7_3
+  perl.x86_64 4:5.16.3-292.el7
+  perl-Carp.noarch 0:1.26-244.el7
+  perl-Compress-Raw-Bzip2.x86_64 0:2.061-3.el7
+  perl-Compress-Raw-Zlib.x86_64 1:2.061-4.el7
+  perl-DBI.x86_64 0:1.627-4.el7
+  perl-Data-Dumper.x86_64 0:2.145-3.el7
+  perl-Digest.noarch 0:1.17-245.el7
+  perl-Digest-MD5.x86_64 0:2.52-3.el7
+  perl-Encode.x86_64 0:2.51-7.el7
+  perl-Exporter.noarch 0:5.68-3.el7
+  perl-File-Path.noarch 0:2.09-2.el7
+  perl-File-Temp.noarch 0:0.23.01-3.el7
+  perl-Filter.x86_64 0:1.49-3.el7
+  perl-Getopt-Long.noarch 0:2.40-2.el7
+  perl-HTTP-Tiny.noarch 0:0.033-3.el7
+  perl-IO-Compress.noarch 0:2.061-2.el7
+  perl-Net-Daemon.noarch 0:0.48-5.el7
+  perl-PathTools.x86_64 0:3.40-5.el7
+  perl-PlRPC.noarch 0:0.2020-14.el7
+  perl-Pod-Escapes.noarch 1:1.04-292.el7
+  perl-Pod-Perldoc.noarch 0:3.20-4.el7
+  perl-Pod-Simple.noarch 1:3.28-4.el7
+  perl-Pod-Usage.noarch 0:1.63-3.el7
+  perl-Scalar-List-Utils.x86_64 0:1.27-248.el7
+  perl-Socket.x86_64 0:2.010-4.el7
+  perl-Storable.x86_64 0:2.45-3.el7
+  perl-Text-ParseWords.noarch 0:3.29-4.el7
+  perl-Time-HiRes.x86_64 4:1.9725-3.el7
+  perl-Time-Local.noarch 0:1.2300-2.el7
+  perl-constant.noarch 0:1.27-2.el7
+  perl-libs.x86_64 4:5.16.3-292.el7
+  perl-macros.x86_64 4:5.16.3-292.el7
+  perl-parent.noarch 1:0.225-244.el7
+  perl-podlators.noarch 0:2.5.1-3.el7
+  perl-threads.x86_64 0:1.87-4.el7
+  perl-threads-shared.x86_64 0:1.43-6.el7
+  squid-migration-script.x86_64 7:3.5.20-10.el7
+
+完了しました!
+[root@localhost conf]# cat /etc/squid/squid.conf
+#
+# Recommended minimum configuration:
+#
+
+# Example rule allowing access from your local networks.
+# Adapt to list your (internal) IP networks from where browsing
+# should be allowed
+acl localnet src 10.0.0.0/8	# RFC1918 possible internal network
+acl localnet src 172.16.0.0/12	# RFC1918 possible internal network
+acl localnet src 192.168.0.0/16	# RFC1918 possible internal network
+acl localnet src fc00::/7       # RFC 4193 local private network range
+acl localnet src fe80::/10      # RFC 4291 link-local (directly plugged) machines
+
+acl SSL_ports port 443
+acl Safe_ports port 80		# http
+acl Safe_ports port 21		# ftp
+acl Safe_ports port 443		# https
+acl Safe_ports port 70		# gopher
+acl Safe_ports port 210		# wais
+acl Safe_ports port 1025-65535	# unregistered ports
+acl Safe_ports port 280		# http-mgmt
+acl Safe_ports port 488		# gss-http
+acl Safe_ports port 591		# filemaker
+acl Safe_ports port 777		# multiling http
+acl CONNECT method CONNECT
+
+#
+# Recommended minimum Access Permission configuration:
+#
+# Deny requests to certain unsafe ports
+http_access deny !Safe_ports
+
+# Deny CONNECT to other than secure SSL ports
+http_access deny CONNECT !SSL_ports
+
+# Only allow cachemgr access from localhost
+http_access allow localhost manager
+http_access deny manager
+
+# We strongly recommend the following be uncommented to protect innocent
+# web applications running on the proxy server who think the only
+# one who can access services on "localhost" is a local user
+#http_access deny to_localhost
+
+#
+# INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS
+#
+
+# Example rule allowing access from your local networks.
+# Adapt localnet in the ACL section to list your (internal) IP networks
+# from where browsing should be allowed
+http_access allow localnet
+http_access allow localhost
+
+# And finally deny all other access to this proxy
+http_access deny all
+
+# Squid normally listens to port 3128
+http_port 3128
+
+# Uncomment and adjust the following to add a disk cache directory.
+#cache_dir ufs /var/spool/squid 100 16 256
+
+# Leave coredumps in the first cache dir
+coredump_dir /var/spool/squid
+
+#
+# Add any of your own refresh_pattern entries above these.
+#
+refresh_pattern ^ftp:		1440	20%	10080
+refresh_pattern ^gopher:	1440	0%	1440
+refresh_pattern -i (/cgi-bin/|\?) 0	0%	0
+refresh_pattern .		0	20%	4320
+[root@localhost conf]# systemctl start squid
+[root@localhost conf]# systemctl status squid
+● squid.service - Squid caching proxy
+   Loaded: loaded (/usr/lib/systemd/system/squid.service; disabled; vendor preset: disabled)
+   Active: active (running) since 土 2018-04-14 23:53:42 JST; 9s ago
+  Process: 9256 ExecStart=/usr/sbin/squid $SQUID_OPTS -f $SQUID_CONF (code=exited, status=0/SUCCESS)
+  Process: 9251 ExecStartPre=/usr/libexec/squid/cache_swap.sh (code=exited, status=0/SUCCESS)
+ Main PID: 9259 (squid)
+   CGroup: /system.slice/squid.service
+           ├─9259 /usr/sbin/squid -f /etc/squid/squid.conf
+           ├─9261 (squid-1) -f /etc/squid/squid.conf
+           └─9262 (logfile-daemon) /var/log/squid/access.log
+
+ 4月 14 23:53:42 localhost.localdomain systemd[1]: Starting Squid caching pr...
+ 4月 14 23:53:42 localhost.localdomain systemd[1]: Started Squid caching proxy.
+ 4月 14 23:53:42 localhost.localdomain squid[9259]: Squid Parent: will start...
+ 4月 14 23:53:42 localhost.localdomain squid[9259]: Squid Parent: (squid-1) ...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost conf]# ss -ltp
+State      Recv-Q Send-Q Local Address:Port                 Peer Address:Port
+LISTEN     0      128        *:ssh                      *:*                     users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:smtp                     *:*                     users:(("master",pid=1244,fd=13))
+LISTEN     0      128       :::http                    :::*                     users:(("httpd",pid=9190,fd=4),("httpd",pid=9189,fd=4),("httpd",pid=9188,fd=4),("httpd",pid=9187,fd=4),("httpd",pid=9186,fd=4),("httpd",pid=9185,fd=4),("httpd",pid=9184,fd=4))
+LISTEN     0      128       :::ssh                     :::*                     users:(("sshd",pid=1007,fd=4))
+LISTEN     0      128       :::squid                   :::*                     users:(("squid",pid=9261,fd=11))
+LISTEN     0      100      ::1:smtp                    :::*                     users:(("master",pid=1244,fd=14))
+LISTEN     0      128       :::https                   :::*                     users:(("httpd",pid=9190,fd=6),("httpd",pid=9189,fd=6),("httpd",pid=9188,fd=6),("httpd",pid=9187,fd=6),("httpd",pid=9186,fd=6),("httpd",pid=9185,fd=6),("httpd",pid=9184,fd=6))
+[root@localhost conf]# ss -ltpn
+State      Recv-Q Send-Q Local Address:Port               Peer Address:Port
+LISTEN     0      128          *:22                       *:*                   users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:25                       *:*                   users:(("master",pid=1244,fd=13))
+LISTEN     0      128         :::80                      :::*                   users:(("httpd",pid=9190,fd=4),("httpd",pid=9189,fd=4),("httpd",pid=9188,fd=4),("httpd",pid=9187,fd=4),("httpd",pid=9186,fd=4),("httpd",pid=9185,fd=4),("httpd",pid=9184,fd=4))
+LISTEN     0      128         :::22                      :::*                   users:(("sshd",pid=1007,fd=4))
+LISTEN     0      128         :::3128                    :::*                   users:(("squid",pid=9261,fd=11))
+LISTEN     0      100        ::1:25                      :::*                   users:(("master",pid=1244,fd=14))
+LISTEN     0      128         :::443                     :::*                   users:(("httpd",pid=9190,fd=6),("httpd",pid=9189,fd=6),("httpd",pid=9188,fd=6),("httpd",pid=9187,fd=6),("httpd",pid=9186,fd=6),("httpd",pid=9185,fd=6),("httpd",pid=9184,fd=6))
+[root@localhost conf]# tail -f /var/log/squid/access.log
+1523717775.741      2 192.168.13.2 TCP_MISS/200 3240 GET http://192.168.13.200/emon.html - HIER_DIRECT/192.168.13.200 text/html
+
+
+
+[root@localhost conf]# cd /etc/yum.repos.d/
+[root@localhost yum.repos.d]# ls
+CentOS-Base.repo       CentOS-Media.repo    CentOS-fasttrack.repo
+CentOS-CR.repo         CentOS-Sources.repo
+CentOS-Debuginfo.repo  CentOS-Vault.repo
+[root@localhost yum.repos.d]# vi nginx.repo
+[root@localhost yum.repos.d]# cat nginx.repo
+[nginx]
+name=nginx repo
+baseurl=http://nginx.org/packages/mainline/centos/7/$basearch/
+gpgcheck=0
+enabled=1
+[root@localhost yum.repos.d]# yum install nginx
+読み込んだプラグイン:fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ nginx.x86_64 1:1.13.12-1.el7_4.ngx を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+================================================================================
+ Package       アーキテクチャー
+                              バージョン                    リポジトリー   容量
+================================================================================
+インストール中:
+ nginx         x86_64         1:1.13.12-1.el7_4.ngx         nginx         750 k
+
+トランザクションの要約
+================================================================================
+インストール  1 パッケージ
+
+総ダウンロード容量: 750 k
+インストール容量: 2.6 M
+Is this ok [y/d/N]: y
+Downloading packages:
+nginx-1.13.12-1.el7_4.ngx.x86_64.rpm                       | 750 kB   00:02
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : 1:nginx-1.13.12-1.el7_4.ngx.x86_64              1/1
+----------------------------------------------------------------------
+
+Thanks for using nginx!
+
+Please find the official documentation for nginx here:
+* http://nginx.org/en/docs/
+
+Please subscribe to nginx-announce mailing list to get
+the most important news about nginx:
+* http://nginx.org/en/support.html
+
+Commercial subscriptions for nginx are available on:
+* http://nginx.com/products/
+
+----------------------------------------------------------------------
+  検証中                  : 1:nginx-1.13.12-1.el7_4.ngx.x86_64              1/1
+
+インストール:
+  nginx.x86_64 1:1.13.12-1.el7_4.ngx
+
+完了しました!
+[root@localhost yum.repos.d]# systemctl start nginx
+[root@localhost yum.repos.d]# systemctl status nginx
+● nginx.service - nginx - high performance web server
+   Loaded: loaded (/usr/lib/systemd/system/nginx.service; disabled; vendor preset: disabled)
+   Active: active (running) since 日 2018-04-15 00:01:24 JST; 5s ago
+     Docs: http://nginx.org/en/docs/
+  Process: 9360 ExecStart=/usr/sbin/nginx -c /etc/nginx/nginx.conf (code=exited, status=0/SUCCESS)
+ Main PID: 9361 (nginx)
+   CGroup: /system.slice/nginx.service
+           ├─9361 nginx: master process /usr/sbin/nginx -c /etc/nginx/nginx.c...
+           └─9362 nginx: worker process
+
+ 4月 15 00:01:24 localhost.localdomain systemd[1]: Starting nginx - high per...
+ 4月 15 00:01:24 localhost.localdomain systemd[1]: PID file /var/run/nginx.p...
+ 4月 15 00:01:24 localhost.localdomain systemd[1]: Started nginx - high perf...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost yum.repos.d]# ss -ltp
+State      Recv-Q Send-Q Local Address:Port                 Peer Address:Port
+LISTEN     0      128        *:http                     *:*                     users:(("nginx",pid=9362,fd=6),("nginx",pid=9361,fd=6))
+LISTEN     0      128        *:ssh                      *:*                     users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:smtp                     *:*                     users:(("master",pid=1244,fd=13))
+LISTEN     0      128       :::ssh                     :::*                     users:(("sshd",pid=1007,fd=4))
+LISTEN     0      128       :::squid                   :::*                     users:(("squid",pid=9261,fd=11))
+LISTEN     0      100      ::1:smtp                    :::*                     users:(("master",pid=1244,fd=14))
+[root@localhost yum.repos.d]# ss -ltpn
+State      Recv-Q Send-Q Local Address:Port               Peer Address:Port
+LISTEN     0      128          *:80                       *:*                   users:(("nginx",pid=9362,fd=6),("nginx",pid=9361,fd=6))
+LISTEN     0      128          *:22                       *:*                   users:(("sshd",pid=1007,fd=3))
+LISTEN     0      100    127.0.0.1:25                       *:*                   users:(("master",pid=1244,fd=13))
+LISTEN     0      128         :::22                      :::*                   users:(("sshd",pid=1007,fd=4))
+LISTEN     0      128         :::3128                    :::*                   users:(("squid",pid=9261,fd=11))
+LISTEN     0      100        ::1:25                      :::*                   users:(("master",pid=1244,fd=14))
+[root@localhost yum.repos.d]# tail -f /var/log/nginx/access.log
+192.168.13.2 - - [15/Apr/2018:00:03:39 +0900] "GET / HTTP/1.1" 200 612 "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.12; rv:59.0) Gecko/20100101 Firefox/59.0" "-"
+
+
+
+
+[root@localhost ~]# yum install bind
+読み込んだプラグイン:fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ bind.x86_64 32:9.9.4-51.el7_4.2 を インストール
+--> 依存性の処理をしています: bind-libs = 32:9.9.4-51.el7_4.2 のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> 依存性の処理をしています: liblwres.so.90()(64bit) のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> 依存性の処理をしています: libisccfg.so.90()(64bit) のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> 依存性の処理をしています: libisccc.so.90()(64bit) のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> 依存性の処理をしています: libisc.so.95()(64bit) のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> 依存性の処理をしています: libdns.so.100()(64bit) のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> 依存性の処理をしています: libbind9.so.90()(64bit) のパッケージ: 32:bind-9.9.4-51.el7_4.2.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ bind-libs.x86_64 32:9.9.4-51.el7_4.2 を インストール
+--> 依存性の処理をしています: bind-license = 32:9.9.4-51.el7_4.2 のパッケージ: 32:bind-libs-9.9.4-51.el7_4.2.x86_64
+--> トランザクションの確認を実行しています。
+---> パッケージ bind-license.noarch 32:9.9.4-50.el7 を 更新
+--> 依存性の処理をしています: bind-license = 32:9.9.4-50.el7 のパッケージ: 32:bind-libs-lite-9.9.4-50.el7.x86_64
+---> パッケージ bind-license.noarch 32:9.9.4-51.el7_4.2 を アップデート
+--> トランザクションの確認を実行しています。
+---> パッケージ bind-libs-lite.x86_64 32:9.9.4-50.el7 を 更新
+---> パッケージ bind-libs-lite.x86_64 32:9.9.4-51.el7_4.2 を アップデート
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+================================================================================
+ Package             アーキテクチャー
+                                 バージョン                  リポジトリー  容量
+================================================================================
+インストール中:
+ bind                x86_64      32:9.9.4-51.el7_4.2         updates      1.8 M
+依存性関連でのインストールをします:
+ bind-libs           x86_64      32:9.9.4-51.el7_4.2         updates      1.0 M
+依存性関連での更新をします:
+ bind-libs-lite      x86_64      32:9.9.4-51.el7_4.2         updates      733 k
+ bind-license        noarch      32:9.9.4-51.el7_4.2         updates       84 k
+
+トランザクションの要約
+================================================================================
+インストール  1 パッケージ (+1 個の依存関係のパッケージ)
+更新                       ( 2 個の依存関係のパッケージ)
+
+総ダウンロード容量: 3.6 M
+Is this ok [y/d/N]: y
+Downloading packages:
+Delta RPMs disabled because /usr/bin/applydeltarpm not installed.
+(1/4): bind-license-9.9.4-51.el7_4.2.noarch.rpm            |  84 kB   00:00
+(2/4): bind-9.9.4-51.el7_4.2.x86_64.rpm                    | 1.8 MB   00:01
+(3/4): bind-libs-9.9.4-51.el7_4.2.x86_64.rpm               | 1.0 MB   00:01
+(4/4): bind-libs-lite-9.9.4-51.el7_4.2.x86_64.rpm          | 733 kB   00:01
+--------------------------------------------------------------------------------
+合計                                               1.9 MB/s | 3.6 MB  00:01
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  更新します              : 32:bind-license-9.9.4-51.el7_4.2.noarch         1/6
+  インストール中          : 32:bind-libs-9.9.4-51.el7_4.2.x86_64            2/6
+  インストール中          : 32:bind-9.9.4-51.el7_4.2.x86_64                 3/6
+  更新します              : 32:bind-libs-lite-9.9.4-51.el7_4.2.x86_64       4/6
+  整理中                  : 32:bind-libs-lite-9.9.4-50.el7.x86_64           5/6
+  整理中                  : 32:bind-license-9.9.4-50.el7.noarch             6/6
+  検証中                  : 32:bind-license-9.9.4-51.el7_4.2.noarch         1/6
+  検証中                  : 32:bind-9.9.4-51.el7_4.2.x86_64                 2/6
+  検証中                  : 32:bind-libs-lite-9.9.4-51.el7_4.2.x86_64       3/6
+  検証中                  : 32:bind-libs-9.9.4-51.el7_4.2.x86_64            4/6
+  検証中                  : 32:bind-license-9.9.4-50.el7.noarch             5/6
+  検証中                  : 32:bind-libs-lite-9.9.4-50.el7.x86_64           6/6
+
+インストール:
+  bind.x86_64 32:9.9.4-51.el7_4.2
+
+依存性関連をインストールしました:
+  bind-libs.x86_64 32:9.9.4-51.el7_4.2
+
+依存性を更新しました:
+  bind-libs-lite.x86_64 32:9.9.4-51.el7_4.2
+  bind-license.noarch 32:9.9.4-51.el7_4.2
+
+完了しました!
+[root@localhost ~]# mv /etc/named.conf /etc/named.conf.default
+[root@localhost ~]# cp -p /etc/named.conf.default /etc/named.conf
+[root@localhost ~]# ls -l /etc/named.conf*
+-rw-r-----. 1 root named 1705  3月 22  2016 /etc/named.conf
+-rw-r-----. 1 root named 1705  3月 22  2016 /etc/named.conf.default
+[root@localhost ~]# vi /etc/named.conf
+[root@localhost ~]# cat /etc/named.conf
+//
+// named.conf
+//
+// Provided by Red Hat bind package to configure the ISC BIND named(8) DNS
+// server as a caching only nameserver (as a localhost DNS resolver only).
+//
+// See /usr/share/doc/bind*/sample/ for example named configuration files.
+//
+// See the BIND Administrator's Reference Manual (ARM) for details about the
+// configuration located in /usr/share/doc/bind-{version}/Bv9ARM.html
+
+options {
+//	listen-on port 53 { 127.0.0.1; };
+	listen-on port 53 { 192.168.13.200; };
+	listen-on-v6 port 53 { ::1; };
+	directory 	"/var/named";
+	dump-file 	"/var/named/data/cache_dump.db";
+	statistics-file "/var/named/data/named_stats.txt";
+	memstatistics-file "/var/named/data/named_mem_stats.txt";
+//	allow-query     { localhost; };
+	allow-query     { any; };
+
+	/*
+	 - If you are building an AUTHORITATIVE DNS server, do NOT enable recursion.
+	 - If you are building a RECURSIVE (caching) DNS server, you need to enable
+	   recursion.
+	 - If your recursive DNS server has a public IP address, you MUST enable access
+	   control to limit queries to your legitimate users. Failing to do so will
+	   cause your server to become part of large scale DNS amplification
+	   attacks. Implementing BCP38 within your network would greatly
+	   reduce such attack surface
+	*/
+	recursion yes;
+
+	dnssec-enable yes;
+	dnssec-validation yes;
+
+	/* Path to ISC DLV key */
+	bindkeys-file "/etc/named.iscdlv.key";
+
+	managed-keys-directory "/var/named/dynamic";
+
+	pid-file "/run/named/named.pid";
+	session-keyfile "/run/named/session.key";
+};
+
+logging {
+        channel default_debug {
+                file "data/named.run";
+                severity dynamic;
+        };
+};
+
+zone "." IN {
+	type hint;
+	file "named.ca";
+};
+
+zone "test.local" IN {
+	type master;
+	file "test.local.zone";
+};
+
+zone "13.168.192.in-addr.arpa" {
+	type master;
+	file "test.local.rev";
+};
+
+include "/etc/named.rfc1912.zones";
+include "/etc/named.root.key";
+[root@localhost ~]# cd /var/named/
+[root@localhost named]# ls
+data  dynamic  named.ca  named.empty  named.localhost  named.loopback  slaves
+[root@localhost named]# vi test.local.zone
+[root@localhost named]# cat test.local.zone
+$TTL 3H
+@	IN SOA	ns.test.local. root.test.local. (
+				2018041501	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	NS	ns.test.local.
+	MX 10	mail.test.local.
+ns	A	192.168.13.200
+www	A	192.168.13.200
+ftp	A	192.168.13.200
+mail	A 	192.168.13.200
+[root@localhost named]# vi test.local.rev
+[root@localhost named]# cat test.local.rev
+$TTL 3H
+@	IN SOA	ns.test.local. root.test.local. (
+				2018041501	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+	NS	ns.test.local.
+	MX 10	mail.test.local.
+200	PTR	ns.test.local.
+200	PTR	www.test.local.
+200	PTR	ftp.test.local.
+200	PTR 	mail.test.local.
+[root@localhost named]# named-checkconf
+[root@localhost named]# named-checkconf /etc/named.conf
+[root@localhost named]# named-checkzone test.local /var/named/test.local.zone
+zone test.local/IN: loaded serial 2018041501
+OK
+[root@localhost named]# named-checkzone 13.168.192.in-addr.arpa /var/named/test.local.rev
+zone 13.168.192.in-add/IN: loaded serial 2018041501
+OK
+[root@localhost named]# systemctl start named
+[root@localhost named]# systemctl status named
+● named.service - Berkeley Internet Name Domain (DNS)
+   Loaded: loaded (/usr/lib/systemd/system/named.service; disabled; vendor preset: disabled)
+   Active: active (running) since 日 2018-04-15 00:32:00 JST; 6s ago
+  Process: 9551 ExecStart=/usr/sbin/named -u named -c ${NAMEDCONF} $OPTIONS (code=exited, status=0/SUCCESS)
+  Process: 9548 ExecStartPre=/bin/bash -c if [ ! "$DISABLE_ZONE_CHECKING" == "yes" ]; then /usr/sbin/named-checkconf -z "$NAMEDCONF"; else echo "Checking of zone files is disabled"; fi (code=exited, status=0/SUCCESS)
+ Main PID: 9554 (named)
+   CGroup: /system.slice/named.service
+           └─9554 /usr/sbin/named -u named -c /etc/named.conf
+
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone 0.in-addr.arpa/IN: ...
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone 1.0.0.127.in-addr.a...
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone localhost.localdoma...
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone 1.0.0.0.0.0.0.0.0.0...
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone 13.168.192.in-addr....
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone test.local/IN: load...
+ 4月 15 00:32:00 localhost.localdomain named[9554]: zone localhost/IN: loade...
+ 4月 15 00:32:00 localhost.localdomain named[9554]: all zones loaded
+ 4月 15 00:32:00 localhost.localdomain named[9554]: running
+ 4月 15 00:32:00 localhost.localdomain systemd[1]: Started Berkeley Internet...
+Hint: Some lines were ellipsized, use -l to show in full.
+[root@localhost named]# yum install bind-utils
+読み込んだプラグイン:fastestmirror
+Loading mirror speeds from cached hostfile
+ * base: ftp.iij.ad.jp
+ * extras: ftp.iij.ad.jp
+ * updates: ftp.iij.ad.jp
+依存性の解決をしています
+--> トランザクションの確認を実行しています。
+---> パッケージ bind-utils.x86_64 32:9.9.4-51.el7_4.2 を インストール
+--> 依存性解決を終了しました。
+
+依存性を解決しました
+
+================================================================================
+ Package          アーキテクチャー
+                               バージョン                   リポジトリー   容量
+================================================================================
+インストール中:
+ bind-utils       x86_64       32:9.9.4-51.el7_4.2          updates       203 k
+
+トランザクションの要約
+================================================================================
+インストール  1 パッケージ
+
+総ダウンロード容量: 203 k
+インストール容量: 435 k
+Is this ok [y/d/N]: y
+Downloading packages:
+bind-utils-9.9.4-51.el7_4.2.x86_64.rpm                     | 203 kB   00:00
+Running transaction check
+Running transaction test
+Transaction test succeeded
+Running transaction
+  インストール中          : 32:bind-utils-9.9.4-51.el7_4.2.x86_64           1/1
+  検証中                  : 32:bind-utils-9.9.4-51.el7_4.2.x86_64           1/1
+
+インストール:
+  bind-utils.x86_64 32:9.9.4-51.el7_4.2
+
+完了しました!
+[root@localhost named]# nslookup
+> server 192.168.13.200
+Default server: 192.168.13.200
+Address: 192.168.13.200#53
+> www.test.local
+Server:		192.168.13.200
+Address:	192.168.13.200#53
+
+Name:	www.test.local
+Address: 192.168.13.200
+> ftp.test.local
+Server:		192.168.13.200
+Address:	192.168.13.200#53
+
+Name:	ftp.test.local
+Address: 192.168.13.200
+> mail.test.local
+Server:		192.168.13.200
+Address:	192.168.13.200#53
+
+Name:	mail.test.local
+Address: 192.168.13.200
+> ns.test.local
+Server:		192.168.13.200
+Address:	192.168.13.200#53
+
+Name:	ns.test.local
+Address: 192.168.13.200
+> 192.168.13.200
+Server:		192.168.13.200
+Address:	192.168.13.200#53
+
+200.13.168.192.in-addr.arpa	name = mail.test.local.
+200.13.168.192.in-addr.arpa	name = www.test.local.
+200.13.168.192.in-addr.arpa	name = ns.test.local.
+200.13.168.192.in-addr.arpa	name = ftp.test.local.
+> exit
+
+
+
+[root@localhost named]# firewall-cmd --list-all-zones
+block
+  target: %%REJECT%%
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+dmz
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+drop
+  target: DROP
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+external
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh
+  ports:
+  protocols:
+  masquerade: yes
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+home
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh mdns samba-client dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+internal
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh mdns samba-client dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: enp0s3
+  sources:
+  services: ssh dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+trusted
+  target: ACCEPT
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+work
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+[root@localhost named]# firewall-cmd --get-default
+public
+[root@localhost named]# firewall-cmd --zone=public --add-service=http
+success
+[root@localhost named]# firewall-cmd --list-all-zones
+block
+  target: %%REJECT%%
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+dmz
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+drop
+  target: DROP
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+external
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh
+  ports:
+  protocols:
+  masquerade: yes
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+home
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh mdns samba-client dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+internal
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh mdns samba-client dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+public (active)
+  target: default
+  icmp-block-inversion: no
+  interfaces: enp0s3
+  sources:
+  services: ssh dhcpv6-client http
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+trusted
+  target: ACCEPT
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services:
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+
+work
+  target: default
+  icmp-block-inversion: no
+  interfaces:
+  sources:
+  services: ssh dhcpv6-client
+  ports:
+  protocols:
+  masquerade: no
+  forward-ports:
+  source-ports:
+  icmp-blocks:
+  rich rules:
+
+  [root@localhost named]# firewall-cmd --zone=public --add-service=https --timeout=60s
+  success
+  [root@localhost named]# firewall-cmd --list-all-zones
+  block
+    target: %%REJECT%%
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services:
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  dmz
+    target: default
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services: ssh
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  drop
+    target: DROP
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services:
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  external
+    target: default
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services: ssh
+    ports:
+    protocols:
+    masquerade: yes
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  home
+    target: default
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services: ssh mdns samba-client dhcpv6-client
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  internal
+    target: default
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services: ssh mdns samba-client dhcpv6-client
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  public (active)
+    target: default
+    icmp-block-inversion: no
+    interfaces: enp0s3
+    sources:
+    services: ssh dhcpv6-client http https
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  trusted
+    target: ACCEPT
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services:
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+
+  work
+    target: default
+    icmp-block-inversion: no
+    interfaces:
+    sources:
+    services: ssh dhcpv6-client
+    ports:
+    protocols:
+    masquerade: no
+    forward-ports:
+    source-ports:
+    icmp-blocks:
+    rich rules:
+
+[root@localhost named]# firewall-cmd --runtime-to-permanent
+success
+[root@localhost named]# firewall-cmd --state
+running
